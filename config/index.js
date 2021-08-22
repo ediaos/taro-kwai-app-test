@@ -9,11 +9,14 @@ const config = {
   },
   sourceRoot: 'src',
   outputRoot: 'dist',
-  plugins: [],
+  plugins: [
+    '@tarojs/plugin-platform-kwai'
+  ],
   defineConstants: {
   },
   copy: {
     patterns: [
+      { from: 'project.config.kwai.json', to: './dist/project.config.json' }
     ],
     options: {
     }

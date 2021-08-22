@@ -364,6 +364,15 @@
     "@babel/helper-plugin-utils" "^7.14.5"
     "@babel/plugin-syntax-numeric-separator" "^7.10.4"
 
+"@babel/plugin-proposal-object-rest-spread@7.11.0":
+  version "7.11.0"
+  resolved "https://npm.corp.kuaishou.com/@babel%2fplugin-proposal-object-rest-spread/-/plugin-proposal-object-rest-spread-7.11.0.tgz#bd81f95a1f746760ea43b6c2d3d62b11790ad0af"
+  integrity sha1-vYH5Wh90Z2DqQ7bC09YrEXkK0K8=
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.10.4"
+    "@babel/plugin-syntax-object-rest-spread" "^7.8.0"
+    "@babel/plugin-transform-parameters" "^7.10.4"
+
 "@babel/plugin-proposal-object-rest-spread@7.14.7", "@babel/plugin-proposal-object-rest-spread@^7.0.0", "@babel/plugin-proposal-object-rest-spread@^7.14.7":
   version "7.14.7"
   resolved "https://npm.corp.kuaishou.com/@babel%2fplugin-proposal-object-rest-spread/-/plugin-proposal-object-rest-spread-7.14.7.tgz#5920a2b3df7f7901df0205974c0641b13fd9d363"
@@ -509,7 +518,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.10.4"
 
-"@babel/plugin-syntax-object-rest-spread@^7.8.3":
+"@babel/plugin-syntax-object-rest-spread@^7.8.0", "@babel/plugin-syntax-object-rest-spread@^7.8.3":
   version "7.8.3"
   resolved "https://npm.corp.kuaishou.com/@babel%2fplugin-syntax-object-rest-spread/-/plugin-syntax-object-rest-spread-7.8.3.tgz#60e225edcbd98a640332a2e72dd3e66f1af55871"
   integrity sha1-YOIl7cvZimQDMqLnLdPmbxr1WHE=
@@ -735,7 +744,7 @@
     "@babel/helper-plugin-utils" "^7.14.5"
     "@babel/helper-replace-supers" "^7.14.5"
 
-"@babel/plugin-transform-parameters@^7.0.0", "@babel/plugin-transform-parameters@^7.14.5":
+"@babel/plugin-transform-parameters@^7.0.0", "@babel/plugin-transform-parameters@^7.10.4", "@babel/plugin-transform-parameters@^7.14.5":
   version "7.14.5"
   resolved "https://npm.corp.kuaishou.com/@babel%2fplugin-transform-parameters/-/plugin-transform-parameters-7.14.5.tgz#49662e86a1f3ddccac6363a7dfb1ff0a158afeb3"
   integrity sha1-SWYuhqHz3cysY2On37H/ChWK/rM=
@@ -1013,6 +1022,17 @@
     pirates "^4.0.0"
     source-map-support "^0.5.16"
 
+"@babel/register@7.9.0":
+  version "7.9.0"
+  resolved "https://npm.corp.kuaishou.com/@babel%2fregister/-/register-7.9.0.tgz#02464ede57548bddbb5e9f705d263b7c3f43d48b"
+  integrity sha1-AkZO3ldUi927Xp9wXSY7fD9D1Is=
+  dependencies:
+    find-cache-dir "^2.0.0"
+    lodash "^4.17.13"
+    make-dir "^2.1.0"
+    pirates "^4.0.0"
+    source-map-support "^0.5.16"
+
 "@babel/runtime-corejs3@^7.14.8":
   version "7.15.3"
   resolved "https://npm.corp.kuaishou.com/@babel%2fruntime-corejs3/-/runtime-corejs3-7.15.3.tgz#28754263988198f2a928c09733ade2fb4d28089d"
@@ -1021,7 +1041,7 @@
     core-js-pure "^3.16.0"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.11.2", "@babel/runtime@^7.7.6", "@babel/runtime@^7.7.7", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.1.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.7.6", "@babel/runtime@^7.7.7", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
   version "7.15.3"
   resolved "https://npm.corp.kuaishou.com/@babel%2fruntime/-/runtime-7.15.3.tgz#2e1c2880ca118e5b2f9988322bd8a7656a32502b"
   integrity sha1-LhwogMoRjlsvmYgyK9inZWoyUCs=
@@ -1159,6 +1179,13 @@
   resolved "https://npm.corp.kuaishou.com/@stencil%2fcore/-/core-2.4.0.tgz#17b45629c8986e35dcbce3f7dab7d64beede83f2"
   integrity sha1-F7RWKciYbjXcvOP32rfWS+7eg/I=
 
+"@tarojs/api@3.2.15":
+  version "3.2.15"
+  resolved "https://npm.corp.kuaishou.com/@tarojs%2fapi/-/api-3.2.15.tgz#237fc039a4f32aa466d85ed235d94b3dfa4e4b36"
+  integrity sha1-I3/AOaTzKqRm2F7SNdlLPfpOSzY=
+  dependencies:
+    "@tarojs/runtime" "3.2.15"
+
 "@tarojs/api@3.3.3":
   version "3.3.3"
   resolved "https://npm.corp.kuaishou.com/@tarojs%2fapi/-/api-3.3.3.tgz#8e1f96418f1b7252ebb0ce7afd66016ac1b50d56"
@@ -1166,6 +1193,21 @@
   dependencies:
     "@babel/runtime" "^7.11.2"
     "@tarojs/runtime" "3.3.3"
+
+"@tarojs/components@3.2.15":
+  version "3.2.15"
+  resolved "https://npm.corp.kuaishou.com/@tarojs%2fcomponents/-/components-3.2.15.tgz#63ccdd833811c9de02025a06e4ea2a5f13c6950e"
+  integrity sha1-Y8zdgzgRyd4CAloG5OoqXxPGlQ4=
+  dependencies:
+    "@stencil/core" "2.4.0"
+    "@tarojs/taro" "3.2.15"
+    better-scroll "^1.14.1"
+    classnames "^2.2.5"
+    intersection-observer "^0.7.0"
+    omit.js "^1.0.0"
+    resolve-pathname "^3.0.0"
+    swiper "4.4.2"
+    weui "^1.1.2"
 
 "@tarojs/components@3.3.3":
   version "3.3.3"
@@ -1181,6 +1223,31 @@
     resolve-pathname "^3.0.0"
     swiper "6.8.0"
     weui "^1.1.2"
+
+"@tarojs/helper@3.2.15":
+  version "3.2.15"
+  resolved "https://npm.corp.kuaishou.com/@tarojs%2fhelper/-/helper-3.2.15.tgz#c07abd739018ea0bde1639ac80dbacf76a5a1284"
+  integrity sha1-wHq9c5AY6gveFjmsgNus92paEoQ=
+  dependencies:
+    "@babel/core" "^7.11.1"
+    "@babel/plugin-proposal-class-properties" "7.10.4"
+    "@babel/plugin-proposal-decorators" "7.10.5"
+    "@babel/plugin-proposal-object-rest-spread" "7.11.0"
+    "@babel/plugin-transform-runtime" "7.11.0"
+    "@babel/preset-env" "^7.11.0"
+    "@babel/preset-typescript" "7.12.17"
+    "@babel/register" "7.9.0"
+    "@babel/runtime" "^7.9.2"
+    "@tarojs/taro" "3.2.15"
+    chalk "3.0.0"
+    chokidar "3.3.1"
+    cross-spawn "7.0.3"
+    debug "4.1.1"
+    find-yarn-workspace-root "1.2.1"
+    fs-extra "8.1.0"
+    lodash "4.17.20"
+    resolve "1.15.1"
+    yauzl "2.10.0"
 
 "@tarojs/helper@3.3.3":
   version "3.3.3"
@@ -1285,6 +1352,15 @@
     "@tarojs/service" "3.3.3"
     "@tarojs/shared" "3.3.3"
 
+"@tarojs/plugin-platform-kwai@^0.0.2":
+  version "0.0.2"
+  resolved "https://npm.corp.kuaishou.com/@tarojs%2fplugin-platform-kwai/-/plugin-platform-kwai-0.0.2.tgz#23d12789a2fc07ed0c978ebd37c9eccc26b26a74"
+  integrity sha1-I9EniaL8B+0Ml469N8nszCayanQ=
+  dependencies:
+    "@tarojs/components" "3.2.15"
+    "@tarojs/service" "3.2.15"
+    "@tarojs/shared" "3.2.15"
+
 "@tarojs/plugin-platform-qq@3.3.3":
   version "3.3.3"
   resolved "https://npm.corp.kuaishou.com/@tarojs%2fplugin-platform-qq/-/plugin-platform-qq-3.3.3.tgz#df131f6f1ffcb56668130defff4111f96ec67421"
@@ -1330,6 +1406,17 @@
     react-reconciler "0.26.1"
     scheduler "^0.20.1"
 
+"@tarojs/router@3.2.15":
+  version "3.2.15"
+  resolved "https://npm.corp.kuaishou.com/@tarojs%2frouter/-/router-3.2.15.tgz#72afd4a50344f1c141c838bdabb223126f39b80f"
+  integrity sha1-cq/UpQNE8cFByDi9q7IjEm85uA8=
+  dependencies:
+    "@tarojs/runtime" "3.2.15"
+    history "^4.10.1"
+    query-string "^6.13.8"
+    universal-router "^8.3.0"
+    url-parse "^1.4.7"
+
 "@tarojs/router@3.3.3":
   version "3.3.3"
   resolved "https://npm.corp.kuaishou.com/@tarojs%2frouter/-/router-3.3.3.tgz#f22c8bbc8f913b6cd7b01ed42fe55b99806ac7c2"
@@ -1349,6 +1436,14 @@
     "@tarojs/helper" "3.3.3"
     scss-bundle "^3.0.2"
 
+"@tarojs/runtime@3.2.15":
+  version "3.2.15"
+  resolved "https://npm.corp.kuaishou.com/@tarojs%2fruntime/-/runtime-3.2.15.tgz#0b42a71252426feb96fb8fd64cdbedcf33932e24"
+  integrity sha1-C0KnElJCb+uW+4/WTNvtzzOTLiQ=
+  dependencies:
+    "@tarojs/shared" "3.2.15"
+    lodash-es "4.17.15"
+
 "@tarojs/runtime@3.3.3":
   version "3.3.3"
   resolved "https://npm.corp.kuaishou.com/@tarojs%2fruntime/-/runtime-3.3.3.tgz#f5ec81f2ba8a4de6fb5254a38439113d08d0b285"
@@ -1358,6 +1453,20 @@
     inversify "5.1.1"
     lodash-es "4.17.15"
     reflect-metadata "^0.1.13"
+
+"@tarojs/service@3.2.15":
+  version "3.2.15"
+  resolved "https://npm.corp.kuaishou.com/@tarojs%2fservice/-/service-3.2.15.tgz#9b47d1df68d3f00427d78ff4a92fb1c15c89747c"
+  integrity sha1-m0fR32jT8AQn14/0qS+xwVyJdHw=
+  dependencies:
+    "@hapi/joi" "17.1.1"
+    "@tarojs/helper" "3.2.15"
+    "@tarojs/shared" "3.2.15"
+    "@tarojs/taro" "3.2.15"
+    fs-extra "8.1.0"
+    lodash "4.17.20"
+    resolve "1.15.1"
+    tapable "1.1.3"
 
 "@tarojs/service@3.3.3":
   version "3.3.3"
@@ -1373,10 +1482,29 @@
     resolve "1.15.1"
     tapable "1.1.3"
 
+"@tarojs/shared@3.2.15":
+  version "3.2.15"
+  resolved "https://npm.corp.kuaishou.com/@tarojs%2fshared/-/shared-3.2.15.tgz#04fd70d30525c27a36e2ccfd698f2b3d64742d83"
+  integrity sha1-BP1w0wUlwno24sz9aY8rPWR0LYM=
+
 "@tarojs/shared@3.3.3":
   version "3.3.3"
   resolved "https://npm.corp.kuaishou.com/@tarojs%2fshared/-/shared-3.3.3.tgz#63448dd7d161e3bd42833b4666701450d451b1b3"
   integrity sha1-Y0SN19Fh471CgztGZnAUUNRRsbM=
+
+"@tarojs/taro-h5@3.2.15":
+  version "3.2.15"
+  resolved "https://npm.corp.kuaishou.com/@tarojs%2ftaro-h5/-/taro-h5-3.2.15.tgz#b5343d5139394a6a609aa4acd7f79798fad29bae"
+  integrity sha1-tTQ9UTk5SmpgmqSs1/eXmPrSm64=
+  dependencies:
+    "@tarojs/api" "3.2.15"
+    "@tarojs/router" "3.2.15"
+    "@tarojs/runtime" "3.2.15"
+    base64-js "^1.3.0"
+    jsonp-retry "^1.0.3"
+    mobile-detect "^1.4.2"
+    raf "^3.4.1"
+    whatwg-fetch "^3.4.0"
 
 "@tarojs/taro-h5@3.3.3":
   version "3.3.3"
@@ -1401,6 +1529,15 @@
     acorn "^8.0.4"
     acorn-walk "^8.0.0"
     loader-utils "^1.2.3"
+
+"@tarojs/taro@3.2.15":
+  version "3.2.15"
+  resolved "https://npm.corp.kuaishou.com/@tarojs%2ftaro/-/taro-3.2.15.tgz#c6072c46edd0e247fc956fa33194e838a056402a"
+  integrity sha1-xgcsRu3Q4kf8lW+jMZToOKBWQCo=
+  dependencies:
+    "@tarojs/api" "3.2.15"
+    "@tarojs/runtime" "3.2.15"
+    "@tarojs/taro-h5" "3.2.15"
 
 "@tarojs/taro@3.3.3":
   version "3.3.3"
@@ -3863,6 +4000,13 @@ dom-serializer@^1.0.1:
     domhandler "^4.2.0"
     entities "^2.0.0"
 
+dom7@^2.1.2:
+  version "2.1.5"
+  resolved "https://npm.corp.kuaishou.com/dom7/-/dom7-2.1.5.tgz#a79411017800b31d8400070cdaebbfc92c1f6377"
+  integrity sha1-p5QRAXgAsx2EAAcM2uu/ySwfY3c=
+  dependencies:
+    ssr-window "^2.0.0"
+
 dom7@^3.0.0:
   version "3.0.0"
   resolved "https://npm.corp.kuaishou.com/dom7/-/dom7-3.0.0.tgz#b861ce5d67a6becd7aaa3ad02942ff14b1240331"
@@ -4704,6 +4848,14 @@ find-up@^4.0.0:
     locate-path "^5.0.0"
     path-exists "^4.0.0"
 
+find-yarn-workspace-root@1.2.1:
+  version "1.2.1"
+  resolved "https://npm.corp.kuaishou.com/find-yarn-workspace-root/-/find-yarn-workspace-root-1.2.1.tgz#40eb8e6e7c2502ddfaa2577c176f221422f860db"
+  integrity sha1-QOuObnwlAt36old8F28iFCL4YNs=
+  dependencies:
+    fs-extra "^4.0.3"
+    micromatch "^3.1.4"
+
 find-yarn-workspace-root@2.0.0:
   version "2.0.0"
   resolved "https://npm.corp.kuaishou.com/find-yarn-workspace-root/-/find-yarn-workspace-root-2.0.0.tgz#f47fb8d239c900eb78179aa81b66673eac88f7bd"
@@ -4805,6 +4957,15 @@ fs-extra@8.1.0, fs-extra@^8.0.1, fs-extra@^8.1.0:
   integrity sha1-SdQ8RaiM2Wd2aMt74bRu/bjS4cA=
   dependencies:
     graceful-fs "^4.2.0"
+    jsonfile "^4.0.0"
+    universalify "^0.1.0"
+
+fs-extra@^4.0.3:
+  version "4.0.3"
+  resolved "https://npm.corp.kuaishou.com/fs-extra/-/fs-extra-4.0.3.tgz#0d852122e5bc5beb453fb028e9c0c9bf36340c94"
+  integrity sha1-DYUhIuW8W+tFP7Ao6cDJvzY0DJQ=
+  dependencies:
+    graceful-fs "^4.1.2"
     jsonfile "^4.0.0"
     universalify "^0.1.0"
 
@@ -5157,6 +5318,18 @@ he@1.2.x, he@^1.2.0:
   version "1.2.0"
   resolved "https://npm.corp.kuaishou.com/he/-/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
   integrity sha1-hK5l+n6vsWX922FWauFLrwVmTw8=
+
+history@^4.10.1:
+  version "4.10.1"
+  resolved "https://npm.corp.kuaishou.com/history/-/history-4.10.1.tgz#33371a65e3a83b267434e2b3f3b1b4c58aad4cf3"
+  integrity sha1-MzcaZeOoOyZ0NOKz87G0xYqtTPM=
+  dependencies:
+    "@babel/runtime" "^7.1.2"
+    loose-envify "^1.2.0"
+    resolve-pathname "^3.0.0"
+    tiny-invariant "^1.0.2"
+    tiny-warning "^1.0.0"
+    value-equal "^1.0.1"
 
 history@^5.0.0:
   version "5.0.1"
@@ -6324,7 +6497,12 @@ lodash.sortby@^4.7.0:
   resolved "https://npm.corp.kuaishou.com/lodash.sortby/-/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
   integrity sha1-7dFMgk4sycHgsKG0K7UhBRakJDg=
 
-lodash@4.17.21, lodash@^4.17.11, lodash@^4.17.14, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.21, lodash@^4.17.3, lodash@^4.17.4:
+lodash@4.17.20:
+  version "4.17.20"
+  resolved "https://npm.corp.kuaishou.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
+  integrity sha1-tEqbYpe8tpjxxRo1RaKzs2jVnFI=
+
+lodash@4.17.21, lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.21, lodash@^4.17.3, lodash@^4.17.4:
   version "4.17.21"
   resolved "https://npm.corp.kuaishou.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha1-Z5WRxWTDv/quhFTPCz3zcMPWkRw=
@@ -6358,7 +6536,7 @@ longest-streak@^2.0.1:
   resolved "https://npm.corp.kuaishou.com/longest-streak/-/longest-streak-2.0.4.tgz#b8599957da5b5dab64dee3fe316fa774597d90e4"
   integrity sha1-uFmZV9pbXatk3uP+MW+ndFl9kOQ=
 
-loose-envify@^1.1.0, loose-envify@^1.4.0:
+loose-envify@^1.1.0, loose-envify@^1.2.0, loose-envify@^1.4.0:
   version "1.4.0"
   resolved "https://npm.corp.kuaishou.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
   integrity sha1-ce5R+nvkyuwaY4OffmgtgTLTDK8=
@@ -9151,6 +9329,16 @@ sshpk@^1.7.0:
     safer-buffer "^2.0.2"
     tweetnacl "~0.14.0"
 
+ssr-window@^1.0.1:
+  version "1.0.1"
+  resolved "https://npm.corp.kuaishou.com/ssr-window/-/ssr-window-1.0.1.tgz#30752a6a4666e7767f0b7e6aa6fc2fdbd0d9b369"
+  integrity sha1-MHUqakZm53Z/C35qpvwv29DZs2k=
+
+ssr-window@^2.0.0:
+  version "2.0.0"
+  resolved "https://npm.corp.kuaishou.com/ssr-window/-/ssr-window-2.0.0.tgz#98c301aef99523317f8d69618f0010791096efc4"
+  integrity sha1-mMMBrvmVIzF/jWlhjwAQeRCW78Q=
+
 ssr-window@^3.0.0, ssr-window@^3.0.0-alpha.1:
   version "3.0.0"
   resolved "https://npm.corp.kuaishou.com/ssr-window/-/ssr-window-3.0.0.tgz#fd5b82801638943e0cc704c4691801435af7ac37"
@@ -9517,6 +9705,14 @@ svg-tags@^1.0.0:
   resolved "https://npm.corp.kuaishou.com/svg-tags/-/svg-tags-1.0.0.tgz#58f71cee3bd519b59d4b2a843b6c7de64ac04764"
   integrity sha1-WPcc7jvVGbWdSyqEO2x95krAR2Q=
 
+swiper@4.4.2:
+  version "4.4.2"
+  resolved "https://npm.corp.kuaishou.com/swiper/-/swiper-4.4.2.tgz#3a35237cbf4870034784e158b4197b65b763d647"
+  integrity sha1-OjUjfL9IcANHhOFYtBl7Zbdj1kc=
+  dependencies:
+    dom7 "^2.1.2"
+    ssr-window "^1.0.1"
+
 swiper@6.8.0:
   version "6.8.0"
   resolved "https://npm.corp.kuaishou.com/swiper/-/swiper-6.8.0.tgz#61c850f49ba778e403f00a01fe0b768bd85d0d20"
@@ -9648,6 +9844,16 @@ timers-browserify@^2.0.4:
   integrity sha1-RKRcEfv0B/NPl7zNFXfGUjYbAO4=
   dependencies:
     setimmediate "^1.0.4"
+
+tiny-invariant@^1.0.2:
+  version "1.1.0"
+  resolved "https://npm.corp.kuaishou.com/tiny-invariant/-/tiny-invariant-1.1.0.tgz#634c5f8efdc27714b7f386c35e6760991d230875"
+  integrity sha1-Y0xfjv3CdxS384bDXmdgmR0jCHU=
+
+tiny-warning@^1.0.0:
+  version "1.0.3"
+  resolved "https://npm.corp.kuaishou.com/tiny-warning/-/tiny-warning-1.0.3.tgz#94a30db453df4c643d0fd566060d60a875d84754"
+  integrity sha1-lKMNtFPfTGQ9D9VmBg1gqHXYR1Q=
 
 tmp@^0.0.33:
   version "0.0.33"
@@ -10106,6 +10312,11 @@ validate-npm-package-license@^3.0.1:
   dependencies:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
+
+value-equal@^1.0.1:
+  version "1.0.1"
+  resolved "https://npm.corp.kuaishou.com/value-equal/-/value-equal-1.0.1.tgz#1e0b794c734c5c0cade179c437d356d931a34d6c"
+  integrity sha1-Hgt5THNMXAyt4XnEN9NW2TGjTWw=
 
 vary@~1.1.2:
   version "1.1.2"
